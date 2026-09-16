@@ -59,7 +59,7 @@ async def hello():
 @app.post("/webhook")
 async def github_webhook(request:Request):
     data = await request.json()
-    if data.get("action") != "opened" and data.get("action") != "reopened":
+    if data.get("action") not in ["opened", "reopened", "synchronize"]:
         print("Ignoring action:", data.get("action"))
         return {"status": "ignored"}
     action = data.get("action")
