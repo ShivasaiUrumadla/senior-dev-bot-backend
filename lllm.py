@@ -2,6 +2,19 @@ from supabase import create_client
 from app.config import SUPABASE_URL, SUPABASE_SECRET_KEY
 
 
+    return response.data
+
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+    )
+
+    return len(response.data) > 0
+
+
+
 supabase = create_client(
         .execute()
     )
@@ -13,6 +26,62 @@ def store_chunks(rows):
         supabase
         .table("code_chunks")
         .insert(rows)
+        .execute()
+            
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+            
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+            
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+            
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+
+            
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+            
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+            
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+
+            
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+            
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
         .execute()
     )
 
@@ -28,18 +97,3 @@ def search_similar_chunks(
         )
         .execute()
     )
-
-    return response.data
-
-def is_repository_indexed(repo: str, commit_sha: str):
-    response = (
-        supabase
-        .table("code_chunks")
-        .select("id")
-        .eq("repo", repo)
-        .eq("commit_sha", commit_sha)
-        .limit(1)
-        .execute()
-    )
-
-    return len(response.data) > 0
