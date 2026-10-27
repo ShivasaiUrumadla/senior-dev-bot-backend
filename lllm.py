@@ -3,30 +3,6 @@ from app.config import SUPABASE_URL, SUPABASE_SECRET_KEY
 
 
 supabase = create_client(
-    SUPABASE_URL,
-    SUPABASE_SECRET_KEY
-)
-
-
-def store_chunk(
-    repo,
-    commit_sha,
-    file_path,
-    chunk_index,
-    content,
-    embedding
-):
-    response = (
-        supabase
-        .table("code_chunks")
-        .insert({
-            "repo": repo,
-            "commit_sha": commit_sha,
-            "file_path": file_path,
-            "chunk_index": chunk_index,
-            "content": content,
-            "embedding": embedding
-        })
         .execute()
     )
 
@@ -45,16 +21,7 @@ def store_chunks(rows):
 def search_similar_chunks(
     query_embedding,
     repo: str,
-    commit_sha: str,
-    match_count: int = 5
-):
-    response = (
-        supabase
-        .rpc(
-            "match_code_chunks",
-            {
-                "query_embedding": query_embedding,
-                "match_count": match_count,
+    commit_sha: unt": match_count,
                 "filter_repo": repo,
                 "filter_commit_sha": commit_sha
             }
