@@ -11,6 +11,51 @@ def is_repository_i
         .execute()
     )
 
+
+    return response.data
+
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+    )
+
+    return response.data
+
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+    )
+
+    return response.data
+
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+    )
+
+    return response.data
+
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+    )
+
+    return response.data
+
+def is_repository_i
+        .eq("repo", repo)
+        .eq("commit_sha", commit_sha)
+        .limit(1)
+        .execute()
+    )
     return len(response.data) > 0
 
 
