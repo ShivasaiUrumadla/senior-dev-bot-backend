@@ -95,5 +95,157 @@ def search_similar_chunks(
                 "filter_commit_sha": commit_sha
             }
         )
+
+  .execute()
+    )
+
+    return len(response.data) > 0
+
+
+
+supabase = create_client(
+        .execute()
+    )
+
+    return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+          .execute()
+    )
+
+    return len(response.data) > 0
+
+
+
+supabase = create_client(
+        .execute()
+    )
+
+    return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+
+          return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+  return response
+
+def store_chunks(rows):
+    response = (
+        supabase
+        .table("code_chunks")
+        .insert(rows)
+        .execute()
+
+
+
+        
+
+        
+
+        
+        
+
+        
+
+        v
         .execute()
     )
